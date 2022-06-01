@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" charset="UTF-8" href="./style.css">
+        <title>Vuokraa polkupyörä</title>
+    </head>
+    <body>
+        <center>
+            <fieldset class="container">
+            <h1>vuokraa polkupyörä</h1>
+            <img class="tuote" src="./fillari.jpg" alt="">
+                <h2>polkupyörä</h2><button onclick="infoTeksti()"class="info">i</button>
+                <div id="infoteksti">Hoi sie! Vuokraa vaaleenpunanen pyörä ittelles kesäks niin elämä hymyilee aina vain 🥰</div>
+                <br><br><select id="service" onchange="calcPrice()">
+                    <option value="0" selected>Valitse palvelu</option>
+                    <option value="1">Pikavuokraus 2h</option>
+                    <option value="2">Päivävuokra 8h</option>
+                    <option value="3">Vuorokausivuokra 19h</option>
+                    <option value="4">Viikonloppuvuokra pe-su</option>
+                </select>
+                <h2>valitse polkupyörien määrä</h2><button onclick="decrement()">-</button><input id="fillarit" type="number" value="0"><button onclick="increment()">+</button>
+                <h2>hinta yhteensä</h2><input id="cost" value="0">
+                <button class="orderButton" onclick="resetValues()">varaa</button>
+            </fieldset>
+        </center>
+        <script src="./java.js"></script>
+    </body>
+</html>
