@@ -1,0 +1,22 @@
+body
+{
+font-family: 'Courier New', Courier, monospace;
+width: 80%;
+margin: auto;
+background-color: lightpink;
+}
+.maincontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 10px;
+    padding: 5px;
+}
+img {
+width: 30em;
+}
